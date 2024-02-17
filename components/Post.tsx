@@ -13,7 +13,7 @@ export default function Post({ post }: { post: SanityDocument }) {
   const { title, mainImage, body } = post;
 
   return (
-    <main className="prose prose-lg container mx-auto p-4">
+    <main className="container prose prose-lg mx-auto p-4">
       {title ? <h1>{title}</h1> : null}
       {mainImage ? (
         <Image
